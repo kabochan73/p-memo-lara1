@@ -8,9 +8,12 @@
         </a>
     </div>
 
-    <form method="GET" action="{{ route('memos.index') }}" class="mb-6">
+    <form method="GET" action="{{ route('memos.index') }}" class="mb-6 flex gap-2">
         <input type="text" name="keyword" value="{{ $keyword }}" placeholder="キーワードで検索"
-               class="w-full border border-gray-300 rounded px-3 py-2">
+               class="flex-1 border border-gray-300 rounded px-3 py-2">
+        <button type="submit" class="px-4 py-2 rounded border border-gray-300 hover:bg-gray-50">
+            検索
+        </button>
     </form>
 
     @if ($memos->isEmpty())
