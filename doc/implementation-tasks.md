@@ -5,8 +5,8 @@
 | 1 | Git環境構築(リポジトリ初期化、.gitignore) | 完了 |
 | 2 | Docker環境構築(自作構成: app/web/db/nodeコンテナ) | 完了(appのビルド確認済み。起動確認はLaravel作成後) |
 | 3 | Laravelプロジェクト作成 | 完了(Laravel 13.44.1、Docker経由でHTTP 200確認済み) |
-| 4 | DB実装(Migration: users拡張・memosテーブル) | 未着手 |
-| 5 | Model実装(User・Memo、リレーション) | 未着手 |
+| 4 | DB実装(Migration: users拡張・memosテーブル) | 完了(usersは標準のまま、memosテーブルを新規作成しMySQLで構造確認済み) |
+| 5 | Model実装(User・Memo、リレーション) | 完了(tinkerで双方向のリレーション動作確認済み) |
 | 6 | 認証機能実装(会員登録・ログイン・ログアウト) | 未着手 |
 | 7 | メモCRUD機能実装(一覧・詳細・作成・編集・削除) | 未着手 |
 | 8 | 検索機能実装 | 未着手 |
