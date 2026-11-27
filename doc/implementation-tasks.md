@@ -2,8 +2,8 @@
 
 | No. | タスク | 状態 |
 |---|---|---|
-| 1 | Git環境構築(リポジトリ初期化、.gitignore) | 進行中 |
-| 2 | Docker環境構築(自作構成: app/web/db/nodeコンテナ) | 未着手 |
+| 1 | Git環境構築(リポジトリ初期化、.gitignore) | 完了 |
+| 2 | Docker環境構築(自作構成: app/web/db/nodeコンテナ) | 完了(appのビルド確認済み。起動確認はLaravel作成後) |
 | 3 | Laravelプロジェクト作成 | 未着手 |
 | 4 | DB実装(Migration: users拡張・memosテーブル) | 未着手 |
 | 5 | Model実装(User・Memo、リレーション) | 未着手 |
