@@ -7,6 +7,8 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Str;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -22,6 +24,9 @@ class AuthenticatedSessionController extends Controller
                 'email' => 'メールアドレスまたはパスワードが正しくありません。',
             ])->onlyInput('email');
         }
+
+        $throttleKey = Str::transliterate(Str::lower((string) $request->input('email')).'|'.$request->ip());
+        RateLimiter::clear($throttleKey);
 
         $request->session()->regenerate();
 
