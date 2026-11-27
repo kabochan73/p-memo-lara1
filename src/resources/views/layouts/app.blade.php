@@ -18,7 +18,7 @@
 
     <main class="max-w-2xl mx-auto px-4 py-8">
         @if (session('status'))
-            <div class="mb-4 px-4 py-2 bg-green-100 text-green-800 rounded">
+            <div id="flash-message" class="mb-4 px-4 py-2 bg-green-100 text-green-800 rounded transition-opacity duration-500">
                 {{ session('status') }}
             </div>
         @endif
