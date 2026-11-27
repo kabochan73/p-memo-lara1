@@ -4,7 +4,7 @@
 |---|---|---|
 | 1 | Git環境構築(リポジトリ初期化、.gitignore) | 完了 |
 | 2 | Docker環境構築(自作構成: app/web/db/nodeコンテナ) | 完了(appのビルド確認済み。起動確認はLaravel作成後) |
-| 3 | Laravelプロジェクト作成 | 未着手 |
+| 3 | Laravelプロジェクト作成 | 完了(Laravel 13.44.1、Docker経由でHTTP 200確認済み) |
 | 4 | DB実装(Migration: users拡張・memosテーブル) | 未着手 |
 | 5 | Model実装(User・Memo、リレーション) | 未着手 |
 | 6 | 認証機能実装(会員登録・ログイン・ログアウト) | 未着手 |
